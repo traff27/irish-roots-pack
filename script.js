@@ -13,7 +13,7 @@
   function val(n){var e=form.querySelector('input[name="'+n+'"]:checked');return e?e.value:null}
   function show(q,on){form.querySelector('[data-q="'+q+'"]').hidden=!on}
   function result(key){
-    var r=R[key],cta=r[3]?'<a class="btn btn-primary" href="'+window.PAYMENT_LINK+'" data-buy>Buy now £99</a><p class="uk-only" data-uk-only>UK residents only</p><p class="refund-note small" data-refund>Refund: if the DFA returns your application for a reason on our pre-post checklist, we refund the £99 in full. <a href="#refund">How refunds work</a></p>':'<a class="btn btn-ghost" href="mailto:'+window.CONTACT_EMAIL+'">Email us</a>';
+    var r=R[key],cta=r[3]?'<a class="btn btn-primary" href="'+window.PAYMENT_LINK+'" data-buy>Buy now £99</a><p class="uk-only" data-uk-only>UK residents only</p><p class="refund-note small" data-refund>Refund: if the DFA returns your application for a reason on our pre-post checklist, we refund the £99 in full. Don\'t need the FBR after all? Choose 50% back plus passport help, or a full refund. <a href="#refund">How refunds work</a></p>':'<a class="btn btn-ghost" href="mailto:'+window.CONTACT_EMAIL+'">Email us</a>';
     out.className='result '+r[0];out.innerHTML='<h3>'+r[1]+'</h3><p>'+r[2]+'</p><p class="small">This is a guide based on the DFA\'s published rules, not a legal decision.</p>'+cta;out.hidden=false;reset.hidden=false;
   }
   function evaluate(){
