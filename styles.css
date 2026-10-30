@@ -61,3 +61,35 @@ ul.checklist li{margin:.35rem 0}
 .refund-note{margin:.2rem 0 0;width:100%}
 .steps ul.links li{background:none;border:0;border-radius:0;padding:0;position:static;counter-increment:none;list-style:disc;color:#3d4b48}
 .steps ul.links li::before{content:none;display:none}
+/* Guides */
+.guide{padding:28px 0 56px}
+.guide h1{margin-top:6px}
+.guide h2{margin-top:2.2rem}
+.guide h3{margin:1.4rem 0 .4rem;font-size:19px}
+.crumbs{font-family:system-ui,sans-serif;font-size:14px;color:var(--muted);margin:0 0 14px;display:block}
+.crumbs a{color:var(--accent)}
+.last-checked{font-family:system-ui,sans-serif;font-size:14px;color:var(--accent-d);background:#e8f0ec;border-radius:8px;padding:8px 12px;display:inline-block;margin:0 0 6px}
+.tldr{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--accent);border-radius:var(--r);padding:6px 20px 8px;margin:22px 0}
+.tldr h2{font-size:20px;margin:.9rem 0 .4rem}
+.tldr ul{padding-left:1.2rem}
+ol.plain-steps{padding-left:1.4rem}ol.plain-steps h3{margin:1rem 0 .2rem;font-size:18px}ol.plain-steps p{margin:0}
+table.compact{min-width:0;margin:14px 0 18px}
+.help-box{background:#fff7ef;border:1px solid #ecd3bd;border-radius:var(--r);padding:6px 20px 16px;margin:36px 0 10px}
+.help-box h2{font-size:21px;margin:1rem 0 .4rem}
+.help-links{display:flex;flex-wrap:wrap;gap:10px;margin:.6rem 0 0}
+.sources ul,.related ul{padding-left:1.2rem}.sources li,.related li{margin:.3rem 0}
+.guide-list{list-style:none;padding:0;display:grid;gap:12px;margin:22px 0}
+.guide-list li{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:14px 18px}
+.guide-list a{display:block;text-decoration:none;font-family:system-ui,sans-serif;font-size:17px;margin-bottom:2px}
+.guide-list span{color:#3d4b48;font-size:15px}
+.footer-guides ul{padding-left:1.1rem;columns:2 260px;margin:0 0 24px}.footer-guides li{margin:.25rem 0}
+.footer-guides h2{font-size:20px;color:#fff}
+.nav-guides-mobile{font-family:system-ui,sans-serif;font-size:14px}
+@media(min-width:760px){.nav-guides-mobile{display:none}}
+@media(max-width:640px){
+table.stack{min-width:0}
+table.stack thead{position:absolute;left:-9999px}
+table.stack tr{display:block;border-bottom:1px solid var(--line);padding:8px 0}
+table.stack td{display:block;border:0;padding:4px 14px}
+table.stack td::before{content:attr(data-label);display:block;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+}

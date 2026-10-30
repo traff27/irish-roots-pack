@@ -1,0 +1,26 @@
+# Irish Roots Pack
+
+> Irish Roots Pack is a private UK business (not a government website) offering a free Foreign Births Register eligibility check and a £99 eligibility check and application preparation service for UK residents applying for Irish citizenship through an Irish-born grandparent or an Irish-citizen parent. The applicant orders certificates, submits the DFA's online form, pays the DFA fee and posts the application themselves. UK residents only. No guarantees: only the Department of Foreign Affairs (DFA) decides.
+
+Key facts (checked 30 October 2026 against https://www.ireland.ie/en/dfa/citizenship/born-abroad/registering-a-foreign-birth/):
+- DFA fee: €278 for 18 and over (€270 plus €8 non-refundable postage and handling); €153 for under 18 (€145 plus €8). Paid online at https://fbr.dfa.ie/.
+- Processing: approximately 12 months, in strict date order.
+- Eligible if born outside Ireland and a grandparent was born on the island of Ireland (including Northern Ireland), or a parent was an Irish citizen at the time of your birth though not born in Ireland.
+- Not needed if a parent born on the island of Ireland was an Irish citizen at your birth: you are already a citizen.
+- Children born before their parent was entered on the register are not eligible through that parent.
+- Irish Roots Pack price: £99 (GBP), separate from DFA and certificate fees. Contact: hello@irishrootspack.com
+
+## Service
+- [Home: free eligibility check and £99 application preparation](https://irishrootspack.com/): what's included, posting checklist, DIY comparison, FAQ, refund policy
+
+## Guides
+- [Foreign Births Register: the complete guide for UK residents](https://irishrootspack.com/guides/foreign-births-register-uk-guide/): Who qualifies, every step from certificates to posting, and what happens after.
+- [Foreign Births Register documents checklist](https://irishrootspack.com/guides/foreign-births-register-documents-checklist/): Every document the DFA asks for, for adults and children, on every route.
+- [Foreign Births Register cost and processing time](https://irishrootspack.com/guides/foreign-births-register-cost-and-processing-time/): The DFA fee, certificate costs from each office, and how long each stage takes.
+- [Irish citizenship through a parent, grandparent or great-grandparent](https://irishrootspack.com/guides/irish-citizenship-grandparent-parent-great-grandparent/): Which route applies to you, and when a great-grandparent link works.
+- [Ordering certificates from GRO, NRS, GRONI and the HSE](https://irishrootspack.com/guides/ordering-birth-certificates-uk-ireland/): Where to order each generation's certificates, what they cost and which version to ask for.
+- [Foreign Births Register witness and photos](https://irishrootspack.com/guides/foreign-births-register-witness-and-photos/): Who can witness, what they sign and stamp, and how to handle the photos and ID copy.
+
+## Official sources
+- [DFA: Registering a foreign birth](https://www.ireland.ie/en/dfa/citizenship/born-abroad/registering-a-foreign-birth/)
+- [Citizens Information: Foreign Births Register](https://www.citizensinformation.ie/en/moving-country/irish-citizenship/foreign-births-register/)

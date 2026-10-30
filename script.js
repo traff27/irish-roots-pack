@@ -40,4 +40,4 @@
   window.addEventListener('hashchange',openRefund);openRefund();
 })();
 // Placeholders, replaced at launch:
-window.PAYMENT_LINK='https://buy.stripe.com/7sY8wPaWc0ZJ6Gn6VPaAw01';window.CONTACT_EMAIL='traff27@aol.com';
+window.PAYMENT_LINK='https://buy.stripe.com/7sY8wPaWc0ZJ6Gn6VPaAw01';window.CONTACT_EMAIL='hello@irishrootspack.com';
