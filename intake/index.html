@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your intake form | Irish Roots Pack</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#2f6b57">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/styles.css">
+<style>
+.intake fieldset{border:1px solid var(--line);background:var(--card);border-radius:var(--r);padding:16px 18px;margin:0 0 16px}
+.intake legend{font-weight:600;padding:0 4px}
+.intake .field{display:block;margin:10px 0 0;font-size:15px}
+.intake .field span{display:block;margin-bottom:4px}
+.intake input[type=text],.intake input[type=tel],.intake input[type=date],.intake textarea{width:100%;box-sizing:border-box;padding:10px 12px;border:1px solid var(--line);border-radius:8px;font:inherit;font-size:16px;background:#fff}
+.intake textarea{min-height:84px;resize:vertical}
+.intake .opts{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:6px}
+.intake .opts label{display:flex;gap:8px;align-items:center;font-size:16px;cursor:pointer}
+.intake .opts input{width:18px;height:18px;accent-color:var(--accent)}
+.intake .hint{font-size:14px;opacity:.8;margin:4px 0 0}
+.intake .hp{position:absolute;left:-9999px}
+#intake-msg{margin:14px 0}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">IRP</span> Irish Roots Pack</a>
+  </div>
+</header>
+<main id="top" class="guide">
+  <div class="wrap narrow">
+    <h1>Your intake form</h1>
+    <div id="intake-bad" class="note" hidden><p><strong>This link isn't working.</strong> Please use the link in your welcome email from hello@irishrootspack.com, or email <a href="mailto:hello@irishrootspack.com">hello@irishrootspack.com</a> and we'll send you a new one.</p></div>
+    <div id="intake-done" class="note" hidden><p><strong>Thank you, we've got your answers.</strong> We'll come back to you within 2 working days with your route and the documents you need. You don't need to do anything else for now. Please don't post any originals to anyone.</p></div>
+    <div id="intake-wrap">
+    <p class="lead"><span id="intake-hello">Hello.</span> These questions tell us which route applies to you and which documents you'll need. It takes about 10 minutes. If you don't know an answer, leave it blank or choose "Don't know".</p>
+    <noscript><p class="note">This form needs JavaScript. If it doesn't work for you, just reply to your welcome email with your answers.</p></noscript>
+    <form id="intake-form" class="intake" novalidate>
+      <input type="hidden" name="t" id="intake-token">
+      <label class="hp" aria-hidden="true">Leave blank <input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+<h2>A. Quick check</h2>
+<fieldset><legend>1. Where were you born?</legend><label class="field"><span>Town and country</span><input type="text" name="q1_birthplace" required placeholder="e.g. Halifax, England"></label><label class="field"><span>Date of birth</span><input type="date" name="q1_dob" required></label></fieldset>
+<fieldset><legend>2. Where do you live?</legend><p class="hint">Do you live in the UK now?</p><div class="opts"><label><input type="radio" name="q2_uk" value="yes"> Yes</label><label><input type="radio" name="q2_uk" value="no"> No</label></div><label class="field"><span>Full postal address</span><textarea name="q2_address" required></textarea></label></fieldset>
+<fieldset><legend>3. Your parents</legend><label class="field"><span>Parent 1: full name</span><input type="text" name="q3_p1_name"></label><label class="field"><span>Parent 1: place of birth (town, country)</span><input type="text" name="q3_p1_place" required></label><label class="field"><span>Parent 1: date of birth</span><input type="text" name="q3_p1_dob" required placeholder="e.g. 12/05/1950"></label><p class="hint">Was parent 1 born on the island of Ireland (including Northern Ireland)?</p><div class="opts"><label><input type="radio" name="q3_p1_island" value="yes"> Yes</label><label><input type="radio" name="q3_p1_island" value="no"> No</label><label><input type="radio" name="q3_p1_island" value="unsure"> Don't know</label></div><label class="field"><span>Parent 2: full name</span><input type="text" name="q3_p2_name"></label><label class="field"><span>Parent 2: place of birth (town, country)</span><input type="text" name="q3_p2_place"></label><label class="field"><span>Parent 2: date of birth</span><input type="text" name="q3_p2_dob" required placeholder="e.g. 03/09/1952"></label><p class="hint">Was parent 2 born on the island of Ireland (including Northern Ireland)?</p><div class="opts"><label><input type="radio" name="q3_p2_island" value="yes"> Yes</label><label><input type="radio" name="q3_p2_island" value="no"> No</label><label><input type="radio" name="q3_p2_island" value="unsure"> Don't know</label></div></fieldset>
+<fieldset><legend>4. If a parent was born on the island of Ireland: were they naturalised as a citizen of another country and did they formally give up (renounce) Irish citizenship?</legend><div class="opts"><label><input type="radio" name="q4_renounced" value="no"> No</label><label><input type="radio" name="q4_renounced" value="yes"> Yes</label><label><input type="radio" name="q4_renounced" value="unsure"> Don't know</label><label><input type="radio" name="q4_renounced" value="na"> Not applicable</label></div></fieldset>
+<fieldset><legend>5. Was any of your grandparents born on the island of Ireland?</legend><div class="opts"><label><input type="radio" name="q5_grand_island" value="yes"> Yes</label><label><input type="radio" name="q5_grand_island" value="no"> No</label><label><input type="radio" name="q5_grand_island" value="unsure"> Don't know</label></div><label class="field"><span>If yes: which grandparent, their name, place of birth and date (or rough year)</span><textarea name="q5_grand_details"></textarea></label></fieldset>
+<fieldset><legend>6. If no parent or grandparent was born on the island of Ireland: was one of your parents already an Irish citizen when you were born (registered on the Foreign Births Register, or naturalised)?</legend><div class="opts"><label><input type="radio" name="q6_parent_citizen" value="no"> No</label><label><input type="radio" name="q6_parent_citizen" value="yes"> Yes</label><label><input type="radio" name="q6_parent_citizen" value="unsure"> Don't know</label><label><input type="radio" name="q6_parent_citizen" value="na"> Not applicable</label></div><label class="field"><span>If registered or naturalised, on what date?</span><input type="text" name="q6_details"></label></fieldset>
+<fieldset><legend>7. If only a great-grandparent was born on the island of Ireland: did your parent register on the Foreign Births Register?</legend><div class="opts"><label><input type="radio" name="q7_great" value="na"> Not applicable</label><label><input type="radio" name="q7_great" value="before"> Yes, before I was born</label><label><input type="radio" name="q7_great" value="after"> Yes, but after I was born</label><label><input type="radio" name="q7_great" value="no"> No</label><label><input type="radio" name="q7_great" value="unsure"> Don't know</label></div></fieldset>
+<h2>B. Your family link</h2>
+<fieldset><legend>8. Your name</legend><label class="field"><span>Full name exactly as on your birth certificate</span><input type="text" name="q8_name" required></label><label class="field"><span>Any other names you have used (e.g. married name)</span><input type="text" name="q8_other"></label></fieldset>
+<fieldset><legend>9. Your parent on the Irish side</legend><label class="field"><span></span><textarea name="q9_parent" placeholder="Full name at birth, any later names, marriage date if their surname changed, and whether they are living (if not, when and where they died)"></textarea></label></fieldset>
+<fieldset><legend>10. Your Irish-born grandparent</legend><p class="hint">Skip if not applicable.</p><label class="field"><span></span><textarea name="q10_grand" placeholder="Name at birth (and maiden name), date and place of marriage, and whether they are living (if not, when and where they died)"></textarea></label></fieldset>
+<h2>C. Documents you already have</h2>
+<fieldset><legend>11. Which of these do you already hold?</legend><p class="hint">Full birth, marriage and death certificates, and photo ID, for you, your parent and your grandparent. Don't send anything yet.</p><label class="field"><span></span><textarea name="q11_docs" placeholder="e.g. my full birth certificate, passport; Dad's birth certificate; Grandad's marriage certificate..."></textarea></label></fieldset>
+<fieldset><legend>12. Are any of them short-form, laminated or photocopies?</legend><div class="opts"><label><input type="radio" name="q12_short" value="yes"> Yes</label><label><input type="radio" name="q12_short" value="no"> No</label><label><input type="radio" name="q12_short" value="unsure"> Don't know</label></div><label class="field"><span>If yes, which ones?</span><input type="text" name="q12_details"></label></fieldset>
+<h2>D. Practical</h2>
+<fieldset><legend>13. Witness</legend><p class="hint">Do you know someone who knows you personally, isn't a relative and is currently practising a listed profession? We'll send you the full list.</p><div class="opts"><label><input type="radio" name="q13_witness" value="yes"> Yes</label><label><input type="radio" name="q13_witness" value="no"> No</label><label><input type="radio" name="q13_witness" value="unsure"> Don't know</label></div><label class="field"><span>Their profession (e.g. GP, solicitor, police officer, teacher)</span><input type="text" name="q13_details"></label></fieldset>
+<fieldset><legend>14. Are you applying just for yourself, or for your children too?</legend><label class="field"><span></span><textarea name="q14_children" placeholder="Just me / my children too (with their dates of birth)"></textarea></label></fieldset>
+<fieldset><legend>15. Are you or your partner expecting a baby?</legend><div class="opts"><label><input type="radio" name="q15_expecting" value="no"> No</label><label><input type="radio" name="q15_expecting" value="yes"> Yes</label></div></fieldset>
+<fieldset><legend>16. Best phone number, in case we need to check anything quickly</legend><label class="field"><span>Phone</span><input type="text" name="q16_phone" required></label></fieldset>
+      <p class="small">We handle your details under UK GDPR, use them only to prepare your application and delete them once your pack is complete. This is document preparation, not legal advice.</p>
+      <div id="intake-msg" role="status" aria-live="polite"></div>
+      <button type="submit" class="btn btn-primary" id="intake-submit">Send my answers</button>
+    </form>
+    </div>
+  </div>
+</main>
+<script>
+(function(){
+  var API='https://api.irishrootspack.com';
+  var q=new URLSearchParams(location.search),t=q.get('t')||'';
+  var form=document.getElementById('intake-form'),msg=document.getElementById('intake-msg'),wrap=document.getElementById('intake-wrap');
+  function bad(){wrap.hidden=true;document.getElementById('intake-bad').hidden=false}
+  function done(){wrap.hidden=true;document.getElementById('intake-done').hidden=false;window.scrollTo(0,0)}
+  if(!t){bad();return}
+  document.getElementById('intake-token').value=t;
+  fetch(API+'/intake/check?t='+encodeURIComponent(t)).then(function(r){return r.json()}).then(function(d){
+    if(!d.ok)return bad();
+    document.getElementById('intake-hello').textContent='Hello '+d.first_name+'.';
+    if(d.submitted)msg.innerHTML='<p class="small">We already have your answers. Sending this form again will update them.</p>';
+  }).catch(function(){});
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var req=form.querySelectorAll('[required]');
+    for(var i=0;i<req.length;i++){if(!req[i].value.trim()){req[i].focus();msg.innerHTML='<p class="note">Please fill in this question before sending.</p>';return}}
+    var btn=document.getElementById('intake-submit');btn.disabled=true;btn.textContent='Sending...';
+    fetch(API+'/intake',{method:'POST',headers:{'content-type':'application/x-www-form-urlencoded'},body:new URLSearchParams(new FormData(form)).toString()})
+      .then(function(r){return r.json().then(function(d){return [r.status,d]})})
+      .then(function(x){if(x[1].ok)return done();if(x[0]===403)return bad();throw 0})
+      .catch(function(){btn.disabled=false;btn.textContent='Send my answers';msg.innerHTML='<p class="note">Sorry, something went wrong. Please try again, or reply to your welcome email with your answers.</p>'});
+  });
+})();
+</script>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-guides">
+      <h2>Free guides</h2>
+      <ul>
+<li><a href="/guides/foreign-births-register-uk-guide/">Foreign Births Register: the complete guide for UK residents</a></li>
+<li><a href="/guides/foreign-births-register-documents-checklist/">Foreign Births Register documents checklist</a></li>
+<li><a href="/guides/foreign-births-register-cost-and-processing-time/">Foreign Births Register cost and processing time</a></li>
+<li><a href="/guides/irish-citizenship-grandparent-parent-great-grandparent/">Irish citizenship through a parent, grandparent or great-grandparent</a></li>
+<li><a href="/guides/ordering-birth-certificates-uk-ireland/">Ordering certificates from GRO, NRS, GRONI and the HSE</a></li>
+<li><a href="/guides/foreign-births-register-witness-and-photos/">Foreign Births Register witness and photos</a></li>
+      </ul>
+    </div>
+    <div class="disclaimer">
+      <h2>Important</h2>
+      <p><strong>Not legal advice.</strong> Irish Roots Pack is a document-preparation service. It does not provide legal advice.</p>
+      <p><strong>Not affiliated with the Irish government.</strong> We are not part of, approved by or connected to the Department of Foreign Affairs or any Irish or UK government body. You can apply directly and free of any service fee via <a href="https://www.ireland.ie/en/dfa/citizenship/born-abroad/registering-a-foreign-birth/" rel="noopener" target="_blank">the DFA's official page</a>.</p>
+      <p><strong>UK residents only.</strong> This service is only available to people living in the UK.</p>
+      <p><strong>No guarantees.</strong> We can't guarantee the outcome of your application or speed up DFA processing. Decisions are made solely by the DFA.</p>
+      <p><strong>Privacy.</strong> We handle your personal data under UK GDPR. Your documents and details are used only to prepare your application, aren't shared with anyone else, and are deleted once your pack is complete unless you ask us to keep them. Contact <a href="mailto:hello@irishrootspack.com">hello@irishrootspack.com</a> to access or delete your data.</p>
+    </div>
+    <p class="small muted">© 2026 Irish Roots Pack · <a href="mailto:hello@irishrootspack.com">hello@irishrootspack.com</a></p>
+  </div>
+</footer>
+</body>
+</html>
